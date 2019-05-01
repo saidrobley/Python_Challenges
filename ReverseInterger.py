@@ -8,18 +8,17 @@ class ReverseInteger(object):
 
         num = abs(num)
 
+        # reverse the integer
         num = int(str(num)[::-1])
         if num > 2 ** 31 - 1 or num < 0 - 2 ** 31 or num == 0:
             return 0
 
-        if positive:
-            num = num
-        else:
+
+        if not positive:
             num = 0 - num
 
 
         return num
-
 
 
 
