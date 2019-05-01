@@ -5,6 +5,7 @@ class TwoSum(object):
         :type target: int
         :rtype: List[int]
         """
+        #empty dict
         nums_dict = {}
         for i in range(len(nums)):
             if nums[i] in nums_dict:
